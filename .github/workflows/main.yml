@@ -32,7 +32,7 @@ jobs:
           TEST_PARAM_2: ${{ secrets.API_PASSWORD }}
           TEST_PARAM_3: ${{ secrets.API_TOKEN }}
         run: |
-          python scripts/script1.py \
+          python GitHub-Actions-Test/script.py \
             --param_1 "$TEST_PARAM_1" \
             --param_2 "$TEST_PARAM_2" \
             --param_3 "$TEST_PARAM_3"
